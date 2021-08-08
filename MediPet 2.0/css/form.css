@@ -1,0 +1,15 @@
+div.form {
+    width:  700px;
+    height: 1000px;
+
+    position: absolute;
+    top: 200px;
+    left: 500px;
+ 
+}
+
+div.footer {
+    width:  100%;
+    position: absolute;
+    top: 900px;
+}
