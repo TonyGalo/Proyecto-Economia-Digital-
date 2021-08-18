@@ -20,6 +20,7 @@ const cerrarSesion = () => auth.signOut();
 // Fin Registro
 
 // Inicio de Sesion 
+const iniciarSesion = (correo, contrasenia) => auth.signInWithEmailAndPassword(correo, contrasenia);
 
 // Fin Inicio de Sesion 
 

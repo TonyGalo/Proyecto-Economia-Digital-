@@ -11,13 +11,18 @@ function initMap() {
 window.onload = async() => {
     var querySnapshot = await listarVeterinarias();
     querySnapshot.forEach(doc => {
+
         var vet = doc.data();
-        var myLatLng = { lat: vet.ubicacion._lat, lng: vet.ubicacion._long };
-        new google.maps.Marker({
-            position: myLatLng,
-            map,
-            title: vet.nombre,
-        });
+        if (vet.ubicacion != undefined || vet.Ubicacion != undefined){
+            var ubi = vet.ubicacion != undefined ? vet.ubicacion: vet.Ubicacion;
+            var myLatLng = { lat: ubi._lat, lng: ubi._long };
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: vet.nombre,
+            });
+        }
+        
 
     });
 }

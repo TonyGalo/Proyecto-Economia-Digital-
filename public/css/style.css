@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Menu Essentials */
 .nav-menu, .nav-menu * {
   margin: 0;
-  padding: 0;
+  padding: 1;
   list-style: none;
 }
 
@@ -856,3 +856,4 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+

@@ -84,18 +84,16 @@
                     <li class="menu-active"><a href="#hero"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li><a href="#about">Nosotros</a></li>
                     <li><a href="#services">Especialidades</a></li>
-                    <li><a href="#portfolio" th:href="@{/cliente/crearCliente}">Clientes</a></li>
-                    <li><a href="#testimonials" th:href="@{/mascota/crearMascota}">Mascotas</a></li>
-                    <li><a href="#team" th:href="@{/cita/crearCita}">Citas</a></li>
-                    <li><a href="#contact" th:href="@{/veterinario/crearVeterinario}">Veterinarios</a></li>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inicioModal">
+                        Ingresar
+                      </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">
+                        Registro
+                      </button>
                 </ul>
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inicioModal">
-					Ingresar
-				  </button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">
-					Registro
-				  </button>
+                
             </nav>
             <!-- #nav-menu-container -->
         </div>
@@ -116,11 +114,11 @@
                             <form action="" id="form-registro">
                                 <div class="mb-3">
                                     <label for="" class="form-label">Correo</label>
-                                    <input class="form-control" type="email" name="correo" required>
+                                    <input id="correoInput" class="form-control" type="email" name="correo" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Contraseña</label>
-                                    <input class="form-control" type="password" name="contrasenia" required>
+                                    <input id="contraseniaInput" class="form-control" type="password" name="contrasenia" required>
                                 </div>
                                 <button type="submit" id="registro" class="btn btn-primary mx-auto my-5">Registrarme</button>
                                 <button type="button" id="registroGoogle" class="btn btn-primary mx-auto my-5">Registrarme con Google</button>
@@ -152,8 +150,9 @@
                                     <label for="" class="form-label">Contraseña</label>
                                     <input class="form-control" type="password" name="contrasenia" required>
                                 </div>
-                                <button type="submit" id="registro" class="btn btn-primary mx-auto my-5">Iniciar Sesión</button>
-                                <button type="button" id="registroGoogle" class="btn btn-primary mx-auto my-5">Iniciar con Google</button>
+                                <button type="submit" id="login" class="btn btn-primary mx-auto my-5">Iniciar Sesión</button>
+                                <button type="button" id="loginGoogle" class="btn btn-primary mx-auto my-5">Iniciar con Google</button>
+                                
                             </form>
                         </div>
                     </div>
