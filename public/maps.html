@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+
+    <style>
+        #map {
+            width: 80vw;
+            height: 50vw;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"> </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr7Ej02JNlUCJ7bp1XheWiNDhj_rprZ-A&callback=initMap">
+    </script>
+    <script>
+        // Your web app's Firebase configuration
+
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyCaVSkOvGDc-3MbQi6mjwJ9BL8wXzNasTo",
+            authDomain: "medipet-260cd.firebaseapp.com",
+            projectId: "medipet-260cd",
+            storageBucket: "medipet-260cd.appspot.com",
+            messagingSenderId: "574116346546",
+            appId: "1:574116346546:web:bdd37eaf634923d2eba7ab",
+            measurementId: "G-X2L47MBXGD"
+        };
+
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.analytics();
+    </script>
+    <script src="js/maps.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>
